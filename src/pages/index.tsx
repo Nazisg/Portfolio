@@ -1,8 +1,7 @@
-
 function Router() {
   return (
-    <div>Router</div>
-  )
+    <div></div>
+  );
 }
 
-export default Router
+export default Router;
