@@ -26,10 +26,12 @@ function Resume() {
             <p className="text-[#d6d6d6] text-[15px] mt-1 leading-relaxed">
               <ul className="list-disc ml-4">
                 <li>
-                  Processing of weekly tasks according to the deadline, mainly
-                  for the required technologies.
+                  Completing tasks according to deadlines, utilizing HTML, CSS,
+                  JavaScript, TypeScript, and React.
                 </li>
-                <li>Utilizing version control systems like Git for efficient code management and collaboration.
+                <li>
+                  Utilizing version control systems like Git for efficient code
+                  management and collaboration.
                 </li>
                 <li>
                   Learning and applying new technologies and frameworks to
@@ -39,15 +41,29 @@ function Resume() {
             </p>
           </li>
           <li className="timeline-item relative ml-3 mb-6">
-            <h4>Coders Azerbaijan </h4>
+            <h4>Crocusoft | Software development company</h4>
             <span className="text-[#CEB15A] text-[15px]">
-              June 2021 - October 2021
+              October 2023 - March 2024
             </span>
-            <p>Front-end Developer</p>
+            <p>Front-end Developer Intern</p>
             <p className="text-[#d6d6d6] text-[15px] mt-1 leading-relaxed">
-              During this intensive program, I gained hands-on experience
-              creating visually appealing and responsive user interfaces with
-              HTML, CSS, JavaScript, and the React framework.
+              <ul className="list-disc ml-4">
+                <li>
+                  Successful completion of 3 projects with advanced technologies
+                  according to the deadline
+                </li>
+                <li>
+                  Setting up the web page according to the design, testing it on
+                  different screen sizes
+                </li>
+                <li>
+                  Utilize Git version control to manage and collaborate on
+                  codebase changes effectively
+                </li>
+                <li>
+                  Working effectively with the backend team using RESTful APIs
+                </li>
+              </ul>
             </p>
           </li>
         </ol>
