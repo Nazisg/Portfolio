@@ -1,4 +1,4 @@
-import { MdOutlineSchool } from "react-icons/md";
+import { MdOutlineSchool, MdOutlineWorkOutline } from "react-icons/md";
 
 function Resume() {
   return (
@@ -11,16 +11,94 @@ function Resume() {
       <div className="timer">
         <div className="flex gap-3 items-center mb-6">
           <div className="w-12 h-12 relative bg-[#202022] bg-custom-gradient shadow-custom rounded-xl flex justify-center items-center">
+            <MdOutlineWorkOutline className="text-primary-color text-2xl" />
+          </div>
+          <h3 className="text-[#fafafa] text-2xl font-semibold">Experience</h3>
+        </div>
+
+        <ol className="ml-[3rem]">
+          <li className="timeline-item relative ml-3 mb-6">
+            <h4>AistGroup MMC | Software company </h4>
+            <span className="text-[#CEB15A] text-[15px]">
+              April 2023 - present
+            </span>
+            <p>Front-end Developer Intern</p>
+            <p className="text-[#d6d6d6] text-[15px] mt-1 leading-relaxed">
+              <ul className="list-disc ml-4">
+                <li>
+                  Processing of weekly tasks according to the deadline, mainly
+                  for the required technologies.
+                </li>
+                <li>Utilizing version control systems like Git for efficient code management and collaboration.
+                </li>
+                <li>
+                  Learning and applying new technologies and frameworks to
+                  enhance the front-end development process.
+                </li>
+              </ul>
+            </p>
+          </li>
+          <li className="timeline-item relative ml-3 mb-6">
+            <h4>Coders Azerbaijan </h4>
+            <span className="text-[#CEB15A] text-[15px]">
+              June 2021 - October 2021
+            </span>
+            <p>Front-end Developer</p>
+            <p className="text-[#d6d6d6] text-[15px] mt-1 leading-relaxed">
+              During this intensive program, I gained hands-on experience
+              creating visually appealing and responsive user interfaces with
+              HTML, CSS, JavaScript, and the React framework.
+            </p>
+          </li>
+        </ol>
+      </div>
+
+      {/* education */}
+      <div className="timer">
+        <div className="flex gap-3 items-center mb-6">
+          <div className="w-12 h-12 relative bg-[#202022] bg-custom-gradient shadow-custom rounded-xl flex justify-center items-center">
             <MdOutlineSchool className="text-primary-color text-2xl" />
           </div>
           <h3 className="text-[#fafafa] text-2xl font-semibold">Education</h3>
         </div>
 
         <ol className="ml-[3rem]">
-          <li className="timeline-item relative ml-3">
-            <h4>University school of the arts</h4>
-            <span className="text-[#CEB15A] text-[15px]">2019 — 20</span>
-            <p>Bachelor Degree : Computer engineering</p>
+          <li className="timeline-item relative ml-3 mb-6">
+            <h4>Codelandia IT School and Software Center</h4>
+            <span className="text-[#CEB15A] text-[15px]">
+              January 2024 - present
+            </span>
+            <p>MERNstack Developer</p>
+            <p className="text-[#d6d6d6] text-[15px] mt-1 leading-relaxed">
+              This comprehensive program focuses on teaching full-stack
+              development using MongoDB, Express.js, React, and Node.js. The
+              course is enhancing my knowledge and proficiency in modern web
+              technologies, preparing me for a successful career in web
+              development.
+            </p>
+          </li>
+          <li className="timeline-item relative ml-3 mb-6">
+            <h4>Coders Azerbaijan </h4>
+            <span className="text-[#CEB15A] text-[15px]">
+              June 2021 - October 2021
+            </span>
+            <p>Front-end Developer</p>
+            <p className="text-[#d6d6d6] text-[15px] mt-1 leading-relaxed">
+              During this intensive program, I gained hands-on experience
+              creating visually appealing and responsive user interfaces with
+              HTML, CSS, JavaScript, and the React framework.
+            </p>
+          </li>
+          <li className="timeline-item relative ml-3 mb-6">
+            <h4>Milli Aviasiya Akademiyası</h4>
+            <span className="text-[#CEB15A] text-[15px]">2019 — 2023</span>
+            <p>Bachelor’s Degree in Computer Engineering</p>
+            <p className="text-[#d6d6d6] text-[15px] mt-1 leading-relaxed">
+              The projects I undertook during my academic studies served as
+              invaluable opportunities to enhance both my theoretical knowledge
+              and practical skills, resulting in a holistic understanding of the
+              field.
+            </p>
           </li>
         </ol>
       </div>

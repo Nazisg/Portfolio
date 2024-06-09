@@ -27,23 +27,26 @@ body {
 //     z-index: -1;
 // }
 
-.timeline-item::before {
-  content: "";
-  position: absolute;
-  top: -24px;
-  left: -36px;
-  width: 1px;
-  height: calc(100% + 50px);
-  background: #383838;
-}
-.timeline-item::after {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: -39px;
-  height: 8px;
-  width: 8px;
-  background-color: #ffdb70;
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px #383838;
+.timeline-item {
+  &:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    top: -24px;
+    left: -36px;
+    width: 1px;
+    height: calc(100% + 50px);
+    background: #383838;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -39px;
+    height: 8px;
+    width: 8px;
+    background-color: #ffdb70;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #383838;
+  }
 }

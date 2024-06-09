@@ -8,8 +8,8 @@ import {
 
 export default function Sidebar() {
   return (
-    <div className="flex flex-col gap-5 justify-center items-center sticky top-4 py-6 px-5 bg-primary-bg border border-[#383838] rounded-[20px] text-white w-[17.5rem]">
-      <div className="flex flex-col justify-center items-center gap-2">
+    <div className="flex flex-col gap-5 items-center max-h-max h-full sticky top-4 py-6 px-5 bg-primary-bg border border-[#383838] rounded-[20px] text-white w-[17.5rem]">
+      <div className="flex flex-col  items-center gap-2">
         <div className="rounded-3xl bg-[#343434] w-36">
           <div className="w-36 h-36"></div>
         </div>
