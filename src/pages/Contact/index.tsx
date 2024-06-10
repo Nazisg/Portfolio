@@ -1,8 +1,11 @@
+import Title from "@/shared/components/Title";
 
 function Contact() {
   return (
-    <div>Contact</div>
-  )
+    <div>
+      <Title title={"Contact"} />
+    </div>
+  );
 }
 
-export default Contact
+export default Contact;

@@ -1,8 +1,11 @@
+import Title from "@/shared/components/Title";
 
 function Projects() {
   return (
-    <div>Projects</div>
-  )
+    <div>
+      <Title title={"Projects"} />
+    </div>
+  );
 }
 
-export default Projects
+export default Projects;

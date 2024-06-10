@@ -1,10 +1,9 @@
+import Title from "@/shared/components/Title";
+
 function About() {
   return (
     <div className="flex flex-col gap-5">
-      <header>
-        <h2 className="text-[#F9F9F9] text-3xl font-semibold">About Me</h2>
-        <div className="w-11 h-[5px] bg-primary-color mt-3 rounded-lg"></div>
-      </header>
+      <Title title={"About"} />
       <div className="text-[15px] leading-loose text-[#d6d6d6] flex flex-col gap-3">
         <p>
           As a highly motivated Frontend Developer with a solid foundation in

@@ -1,13 +1,11 @@
 import skills from "@/db/skills";
+import Title from "@/shared/components/Title";
 import { MdOutlineSchool, MdOutlineWorkOutline } from "react-icons/md";
 
 function Resume() {
   return (
     <div className="flex flex-col gap-7">
-      <header>
-        <h2 className="text-[#F9F9F9] text-3xl font-semibold">Resume</h2>
-        <div className="w-11 h-[5px] bg-primary-color mt-3 rounded-lg"></div>
-      </header>
+      <Title title={"Resume"} />
 
       {/* experience */}
       <div className="timer">
