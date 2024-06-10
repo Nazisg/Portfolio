@@ -1,3 +1,4 @@
+import skills from "@/db/skills";
 import { MdOutlineSchool, MdOutlineWorkOutline } from "react-icons/md";
 
 function Resume() {
@@ -8,6 +9,7 @@ function Resume() {
         <div className="w-11 h-[5px] bg-primary-color mt-3 rounded-lg"></div>
       </header>
 
+      {/* experience */}
       <div className="timer">
         <div className="flex gap-3 items-center mb-6">
           <div className="w-12 h-12 relative bg-[#202022] bg-custom-gradient shadow-custom rounded-xl flex justify-center items-center">
@@ -117,6 +119,25 @@ function Resume() {
             </p>
           </li>
         </ol>
+      </div>
+
+      {/* skills */}
+      <h2 className="text-[#fafafa] text-2xl font-semibold">My Skills</h2>
+      <div className="flex gap-5 flex-wrap">
+        {skills.map((skill, index) => (
+          <div key={index} className="relative group">
+            <div className="flex justify-center items-center bg-primary-bg border border-[#383838] rounded-xl w-[4.5rem] h-[4.5rem] p-2 transition duration-300 ease-in-out transform ">
+              <img
+                src={skill.iconUrl}
+                alt={skill.name}
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <div className="absolute top-[-10px] text-sm left-0 right-0 bg-primary-bg border border-[#383838] rounded-md text-center py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {skill.name}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
