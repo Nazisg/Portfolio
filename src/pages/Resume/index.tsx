@@ -133,7 +133,7 @@ function Resume() {
                 className="w-full h-full object-contain"
               />
             </div>
-            <div className="absolute top-[-10px] text-sm left-0 right-0 bg-primary-bg border border-[#383838] rounded-md text-center py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div className="text-xs w-full h-full absolute top-0 flex justify-center items-center left-0 right-0 bg-primary-bg border border-[#383838] rounded-xl text-center py-1 opacity-0 group-hover:opacity-85 transition-opacity duration-300">
               {skill.name}
             </div>
           </div>

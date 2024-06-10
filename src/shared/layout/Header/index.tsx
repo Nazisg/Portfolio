@@ -18,38 +18,38 @@ export default function Header() {
             </NavLink>
           </li>
           <li>
-            <NavLink className={({ isActive }) =>
+            <NavLink
+              className={({ isActive }) =>
                 isActive
                   ? "text-primary-color duration-150"
                   : "text-[#d6d6d6] hover:text-[#d6d6d6b2] duration-150"
-              } to="/resume">
+              }
+              to="/resume"
+            >
               Resume
             </NavLink>
           </li>
           <li>
-            <NavLink className={({ isActive }) =>
+            <NavLink
+              className={({ isActive }) =>
                 isActive
                   ? "text-primary-color duration-150"
                   : "text-[#d6d6d6] hover:text-[#d6d6d6b2] duration-150"
-              } to="/skills">
-              Skills
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className={({ isActive }) =>
-                isActive
-                  ? "text-primary-color duration-150"
-                  : "text-[#d6d6d6] hover:text-[#d6d6d6b2] duration-150"
-              } to="/projects">
+              }
+              to="/projects"
+            >
               Projects
             </NavLink>
           </li>
           <li>
-            <NavLink className={({ isActive }) =>
+            <NavLink
+              className={({ isActive }) =>
                 isActive
                   ? "text-primary-color duration-150"
                   : "text-[#d6d6d6] hover:text-[#d6d6d6b2] duration-150"
-              } to="/contact">
+              }
+              to="/contact"
+            >
               Contact
             </NavLink>
           </li>
