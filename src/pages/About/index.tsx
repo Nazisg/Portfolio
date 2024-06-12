@@ -14,7 +14,7 @@ function About() {
         </p>
         <p>
           In my quest to become a well-rounded developer, I am currently
-          enrolled in a MERN stack course after winning the TechNest
+          enrolled in a MERN stack course after winning the Technest
           Scholarship. This opportunity allows me to improve both client-side
           and server-side development skills, thereby enhancing my overall
           backend expertise. I am eager to learn from experienced developers and
