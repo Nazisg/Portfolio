@@ -24,7 +24,7 @@ function Contact() {
         ></textarea>
         <div className="flex justify-end">
           <button className="flex items-center gap-1 py-3 px-5 text-primary-color  rounded-2xl  bg-[#202022] bg-custom-gradient shadow-custom">
-            <IoIosSend className="text-primary-color text-xl" />
+            <IoIosSend className="text-primary-color text-xl"/>
             Send Message
           </button>
         </div>
