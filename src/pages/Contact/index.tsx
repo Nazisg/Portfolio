@@ -6,6 +6,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact: React.FC = () => {
+  
   const form = useRef<HTMLFormElement>(null);
   const SERVICE_ID = "service_lvybe2d";
   const TEMPLATE_ID = "template_myqvxph";
