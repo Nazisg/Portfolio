@@ -2,7 +2,7 @@ import Title from "@/shared/components/Title";
 import emailjs from "@emailjs/browser";
 import { FormEvent, useRef } from "react";
 import { IoIosSend } from "react-icons/io";
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact: React.FC = () => {
@@ -13,7 +13,6 @@ const Contact: React.FC = () => {
 
   const sendEmail = (e: FormEvent) => {
     e.preventDefault();
-
     if (form.current) {
       emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
         () => {
@@ -79,6 +78,7 @@ const Contact: React.FC = () => {
           </button>
         </div>
       </form>
+      <ToastContainer/>
     </section>
   );
 };
