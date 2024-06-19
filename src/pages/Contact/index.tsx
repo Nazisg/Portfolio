@@ -66,14 +66,14 @@ const Contact: React.FC = () => {
         onSubmit={sendEmail}
       >
         {({ errors, touched, isSubmitting, values }) => (
-          <Form className="mt-6 space-y-4">
-            <div className="flex flex-col md:flex-row md:space-x-4">
+          <Form className="mt-6 flex flex-col gap-3">
+            <div className="flex flex-col md:flex-row gap-3">
               <div className="w-full">
                 <Field
                   type="text"
                   placeholder="Full name"
                   name="user_name"
-                  className={`w-full py-4 px-5 text-[#fafafa] border placeholder:text-sm rounded-xl bg-transparent focus:outline-none  ${
+                  className={`w-full py-3 px-4 md:py-4 md:px-5 text-[#fafafa] border placeholder:text-sm rounded-xl bg-transparent focus:outline-none  ${
                     errors.user_name && touched.user_name
                       ? "border-red-500"
                       : "border-[#383838] focus:ring-1 focus:ring-[#ffdb70]"
@@ -85,7 +85,7 @@ const Contact: React.FC = () => {
                   type="email"
                   placeholder="Email address"
                   name="user_email"
-                  className={`w-full py-4 px-5 text-[#fafafa] border placeholder:text-sm rounded-xl bg-transparent focus:outline-none  ${
+                  className={`w-full py-3 px-4 md:py-4 md:px-5 text-[#fafafa] border placeholder:text-sm rounded-xl bg-transparent focus:outline-none  ${
                     errors.user_email && touched.user_email
                       ? "border-red-500"
                       : "border-[#383838] focus:ring-1 focus:ring-[#ffdb70]"
@@ -98,7 +98,7 @@ const Contact: React.FC = () => {
                 as="textarea"
                 placeholder="Your message"
                 name="message"
-                className={`w-full py-4 px-5 h-40 resize-none text-[#fafafa] border placeholder:text-sm rounded-xl bg-transparent focus:outline-none  ${
+                className={`w-full py-3 px-4 md:py-4 md:px-5 h-40 resize-none text-[#fafafa] border placeholder:text-sm rounded-xl bg-transparent focus:outline-none  ${
                   errors.message && touched.message
                     ? "border-red-500"
                     : "border-[#383838] focus:ring-1 focus:ring-[#ffdb70]"
@@ -108,7 +108,7 @@ const Contact: React.FC = () => {
             <div className="flex justify-end">
               <button
                 type="submit"
-                className={`flex items-center gap-1 py-3 px-5 text-primary-color rounded-2xl bg-[#202022] bg-custom-gradient shadow-custom ${
+                className={`flex items-center text-sm md:text-base md:w-auto w-full justify-center gap-1 py-2 px-4 lg:py-3 lg:px-5 text-primary-color rounded-2xl bg-[#202022] bg-custom-gradient shadow-custom ${
                   isSubmitting ||
                   loading ||
                   !values.user_name ||
@@ -128,7 +128,7 @@ const Contact: React.FC = () => {
                 {loading ? (
                   <AiOutlineLoading3Quarters className="text-primary-color text-xl animate-spin" />
                 ) : (
-                  <IoIosSend className="text-primary-color text-xl" />
+                  <IoIosSend className="text-primary-color text-lg md:text-xl" />
                 )}
                 {loading ? "Sending..." : "Send Message"}
               </button>
