@@ -20,7 +20,7 @@ function Resume() {
           <li className="timeline-item relative ml-3 mb-6">
             <h4>AistGroup MMC | Software company </h4>
             <span className="text-[#CEB15A] text-[15px]">
-              April 2023 - present
+              April 2024 - present
             </span>
             <p>Front-end Developer Intern</p>
             <p className="text-[#d6d6d6] text-[15px] mt-1 leading-relaxed">

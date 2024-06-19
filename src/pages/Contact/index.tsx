@@ -17,7 +17,9 @@ const Contact: React.FC = () => {
 
   const validationSchema = Yup.object({
     user_name: Yup.string().required("Full name is required"),
-    user_email: Yup.string().email("Invalid email address").required("Email address is required"),
+    user_email: Yup.string()
+      .email("Invalid email address")
+      .required("Email address is required"),
     message: Yup.string().required("Message is required"),
   });
 
@@ -63,7 +65,7 @@ const Contact: React.FC = () => {
         validationSchema={validationSchema}
         onSubmit={sendEmail}
       >
-        {({ errors, touched, isSubmitting }) => (
+        {({ errors, touched, isSubmitting, values }) => (
           <Form className="mt-6 space-y-4">
             <div className="flex flex-col md:flex-row md:space-x-4">
               <div className="w-full">
@@ -72,7 +74,9 @@ const Contact: React.FC = () => {
                   placeholder="Full name"
                   name="user_name"
                   className={`w-full py-4 px-5 text-[#fafafa] border placeholder:text-sm rounded-xl bg-transparent focus:outline-none  ${
-                    errors.user_name && touched.user_name ? "border-red-500" : "border-[#383838] focus:ring-1 focus:ring-[#ffdb70]"
+                    errors.user_name && touched.user_name
+                      ? "border-red-500"
+                      : "border-[#383838] focus:ring-1 focus:ring-[#ffdb70]"
                   }`}
                 />
               </div>
@@ -82,7 +86,9 @@ const Contact: React.FC = () => {
                   placeholder="Email address"
                   name="user_email"
                   className={`w-full py-4 px-5 text-[#fafafa] border placeholder:text-sm rounded-xl bg-transparent focus:outline-none  ${
-                    errors.user_email && touched.user_email ? "border-red-500" : "border-[#383838] focus:ring-1 focus:ring-[#ffdb70]"
+                    errors.user_email && touched.user_email
+                      ? "border-red-500"
+                      : "border-[#383838] focus:ring-1 focus:ring-[#ffdb70]"
                   }`}
                 />
               </div>
@@ -93,15 +99,31 @@ const Contact: React.FC = () => {
                 placeholder="Your message"
                 name="message"
                 className={`w-full py-4 px-5 h-40 resize-none text-[#fafafa] border placeholder:text-sm rounded-xl bg-transparent focus:outline-none  ${
-                  errors.message && touched.message ? "border-red-500" : "border-[#383838] focus:ring-1 focus:ring-[#ffdb70]"
+                  errors.message && touched.message
+                    ? "border-red-500"
+                    : "border-[#383838] focus:ring-1 focus:ring-[#ffdb70]"
                 }`}
               />
             </div>
             <div className="flex justify-end">
               <button
                 type="submit"
-                className="flex items-center gap-1 py-3 px-5 text-primary-color rounded-2xl bg-[#202022] bg-custom-gradient shadow-custom"
-                disabled={isSubmitting || loading}
+                className={`flex items-center gap-1 py-3 px-5 text-primary-color rounded-2xl bg-[#202022] bg-custom-gradient shadow-custom ${
+                  isSubmitting ||
+                  loading ||
+                  !values.user_name ||
+                  !values.user_email ||
+                  !values.message
+                    ? "cursor-not-allowed opacity-50"
+                    : ""
+                }`}
+                disabled={
+                  isSubmitting ||
+                  loading ||
+                  !values.user_name ||
+                  !values.user_email ||
+                  !values.message
+                }
               >
                 {loading ? (
                   <AiOutlineLoading3Quarters className="text-primary-color text-xl animate-spin" />
