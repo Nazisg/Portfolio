@@ -8,11 +8,11 @@ import Contact from "@/pages/Contact";
 
 function App() {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center relative">
     <div className="flex  flex-col lg:flex-row  gap-5 w-[90%] my-8 relative">
     <Router>
         <Sidebar />
-        <section className="w-full p-5 md:p-8  overflow-y-auto flex-grow-0 bg-primary-bg relative border border-[#383838] rounded-[20px] text-white">
+        <section className="w-full p-5 md:p-8  overflow-y-auto flex-grow-0 bg-primary-bg md:relative border border-[#383838] rounded-[20px] text-white">
           <Header />
           <main>
             <Routes>

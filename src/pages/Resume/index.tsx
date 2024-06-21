@@ -13,7 +13,7 @@ function Resume() {
           <div className="w-12 h-12 relative bg-[#202022] bg-custom-gradient shadow-custom rounded-xl flex justify-center items-center">
             <MdOutlineWorkOutline className="text-primary-color text-2xl" />
           </div>
-          <h3 className="text-[#fafafa] text-2xl font-semibold">Experience</h3>
+          <h3 className="text-[#fafafa] text-lg md:text-xl lg:text-2xl font-semibold">Experience</h3>
         </div>
 
         <ol className="ml-[3rem]">
@@ -73,7 +73,7 @@ function Resume() {
       <div className="timer">
         <div className="flex gap-3 items-center mb-6">
           <div className="w-12 h-12 relative bg-[#202022] bg-custom-gradient shadow-custom rounded-xl flex justify-center items-center">
-            <MdOutlineSchool className="text-primary-color text-2xl" />
+            <MdOutlineSchool className="text-primary-color text-xl md::text-2xl" />
           </div>
           <h3 className="text-[#fafafa] text-2xl font-semibold">Education</h3>
         </div>
