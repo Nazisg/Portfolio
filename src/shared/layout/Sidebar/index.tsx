@@ -63,7 +63,7 @@ export default function Sidebar() {
       </div>
 
       {(showContacts || isDesktop) && (
-        <div className="flex-col gap-6 flex w-full">
+        <div className="flex-col gap-5 flex w-full">
           <div className="w-full h-[1px] bg-head-color bg-[#383838]"></div>
           <div className="flex gap-3 items-center">
             <div className="w-10 h-10 md:w-12 md:h-12 bg-[#202022] bg-custom-gradient shadow-custom rounded-xl flex justify-center items-center">
