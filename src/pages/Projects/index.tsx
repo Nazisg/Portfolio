@@ -6,7 +6,7 @@ import { FaLink } from "react-icons/fa6";
 
 const Projects: React.FC = () => {
   return (
-    <div>
+    <section>
       <Title title="Projects" />
       <div className="mt-5 grid grid-cols-1 lg:grid-cols-2 gap-4">
         {projects.map((project, index) => (
@@ -53,7 +53,7 @@ const Projects: React.FC = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -4,16 +4,18 @@ import { MdOutlineSchool, MdOutlineWorkOutline } from "react-icons/md";
 
 function Resume() {
   return (
-    <div className="flex flex-col gap-7">
+    <section>
       <Title title={"Resume"} />
 
       {/* experience */}
       <div className="timer">
-        <div className="flex gap-3 items-center mb-6">
-          <div className="w-12 h-12 relative bg-[#202022] bg-custom-gradient shadow-custom rounded-xl flex justify-center items-center">
-            <MdOutlineWorkOutline className="text-primary-color text-2xl" />
+        <div className="flex gap-3 items-center mb-3 md:mb-6">
+          <div className="w-10 h-10 ml-1 md:ml-0 md:w-12 md:h-12 relative bg-[#202022] bg-custom-gradient shadow-custom rounded-xl flex justify-center items-center">
+            <MdOutlineWorkOutline className="text-primary-color text-xl md:text-2xl" />
           </div>
-          <h3 className="text-[#fafafa] text-lg md:text-xl lg:text-2xl font-semibold">Experience</h3>
+          <h3 className="text-[#fafafa] text-lg md:text-xl lg:text-2xl font-semibold">
+            Experience
+          </h3>
         </div>
 
         <ol className="ml-[3rem]">
@@ -71,11 +73,13 @@ function Resume() {
 
       {/* education */}
       <div className="timer">
-        <div className="flex gap-3 items-center mb-6">
-          <div className="w-12 h-12 relative bg-[#202022] bg-custom-gradient shadow-custom rounded-xl flex justify-center items-center">
-            <MdOutlineSchool className="text-primary-color text-xl md::text-2xl" />
+        <div className="flex gap-3 items-center mb-3 md:mb-6">
+          <div className="w-10 h-10 ml-1 md:ml-0 md:w-12 md:h-12 relative bg-[#202022] bg-custom-gradient shadow-custom rounded-xl flex justify-center items-center">
+            <MdOutlineSchool className="text-primary-color text-xl md:text-2xl" />
           </div>
-          <h3 className="text-[#fafafa] text-2xl font-semibold">Education</h3>
+          <h3 className="text-[#fafafa] text-lg md:text-xl lg:text-2xl font-semibold">
+            Education
+          </h3>
         </div>
 
         <ol className="ml-[3rem]">
@@ -120,11 +124,13 @@ function Resume() {
       </div>
 
       {/* skills */}
-      <h2 className="text-[#fafafa] text-2xl font-semibold">My Skills</h2>
-      <div className="flex gap-5 flex-wrap">
+      <h2 className="text-[#fafafa] text-lg md:text-xl lg:text-2xl font-semibold mb-3 md:mb-4 lg:mb-5">
+        My Skills
+      </h2>
+      <div className="flex gap-2 md:gap-3 lg:gap-5 flex-wrap">
         {skills.map((skill, index) => (
           <div key={index} className="relative group">
-            <div className="flex justify-center items-center bg-primary-bg border border-[#383838] rounded-xl w-[4.5rem] h-[4.5rem] p-2 transition duration-300 ease-in-out transform ">
+            <div className="flex justify-center items-center bg-primary-bg border border-[#383838] rounded-xl w-12 h-12 md:w-14 md:h-14 lg:w-[4.5rem] lg:h-[4.5rem] p-2 transition duration-300 ease-in-out transform ">
               <img
                 src={skill.iconUrl}
                 alt={skill.name}
@@ -137,7 +143,7 @@ function Resume() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 

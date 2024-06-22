@@ -1,12 +1,12 @@
+import Title from "@/shared/components/Title";
+import emailjs from "@emailjs/browser";
+import { Field, Form, Formik } from "formik";
 import { useState } from "react";
-import { Formik, Form, Field } from "formik";
-import * as Yup from "yup";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { IoIosSend } from "react-icons/io";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { AiOutlineLoading3Quarters } from "react-icons/ai";
-import emailjs from "@emailjs/browser";
-import Title from "@/shared/components/Title";
+import * as Yup from "yup";
 
 const Contact: React.FC = () => {
   const SERVICE_ID = "service_lvybe2d";

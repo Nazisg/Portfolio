@@ -2,7 +2,7 @@ import Title from "@/shared/components/Title";
 
 function About() {
   return (
-    <div className="flex flex-col gap-5">
+    <section>
       <Title title={"About"} />
       <div className="text-[15px] leading-loose text-[#d6d6d6] flex flex-col gap-3">
         <p>
@@ -23,7 +23,7 @@ function About() {
           project success.
         </p>
       </div>
-    </div>
+    </section>
   );
 }
 
