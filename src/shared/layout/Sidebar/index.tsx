@@ -1,4 +1,4 @@
-import avatar from "@/shared/media/imgs/avatar.png";
+// import avatar from "@/shared/media/imgs/avatar.png";
 import { useEffect, useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import {
@@ -33,11 +33,11 @@ export default function Sidebar() {
       <div className="flex flex-row lg:flex-col items-center gap-4 lg:gap-2">
         <div className="rounded-3xl bg-[#343434] lg:h-36 lg:w-36 md:w-28 md:h-28 w-20 h-20">
           <div className="lg:w-36 lg:h-36 md:w-28 md:h-28 w-20 h-20 ">
-            <img
+            {/* <img
               src={avatar}
               alt="avatar"
               className="w-full h-full object-cover rounded-3xl"
-            />
+            /> */}
           </div>
         </div>
         <div className="flex flex-col gap-2 items-start lg:items-center">
