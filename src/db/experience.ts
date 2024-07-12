@@ -1,6 +1,5 @@
 import { ExperienceItem } from "@/shared/types";
 
-
 const experienceData: ExperienceItem[] = [
   {
     company: "Information Communication Technologies Agency",
@@ -11,8 +10,8 @@ const experienceData: ExperienceItem[] = [
       "Completing tasks according, utilizing HTML, CSS, JavaScript, and React.",
       "Setting up the web page according to the design, testing it on different screen sizes.",
       "Utilize Git version control to manage and collaborate on codebase changes effectively.",
-      "Working effectively with the backend team using RESTful APIs"
-    ]
+      "Working effectively with the backend team using RESTful APIs",
+    ],
   },
   {
     company: "AistGroup MMC",
@@ -22,8 +21,8 @@ const experienceData: ExperienceItem[] = [
     tasks: [
       "Completing tasks according to deadlines, utilizing HTML, CSS, JavaScript, TypeScript, and React.",
       "Utilizing version control systems like Git for efficient code management and collaboration.",
-      "Learning and applying new technologies and frameworks to enhance the front-end development process."
-    ]
+      "Learning and applying new technologies and frameworks to enhance the front-end development process.",
+    ],
   },
   {
     company: "Crocusoft LLC",
@@ -34,9 +33,9 @@ const experienceData: ExperienceItem[] = [
       "Successful completion of 3 projects with advanced technologies according to the deadline",
       "Setting up the web page according to the design, testing it on different screen sizes",
       "Utilize Git version control to manage and collaborate on codebase changes effectively",
-      "Working effectively with the backend team using RESTful APIs"
-    ]
-  }
+      "Working effectively with the backend team using RESTful APIs",
+    ],
+  },
 ];
 
 export default experienceData;
