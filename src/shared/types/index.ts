@@ -21,3 +21,18 @@ export interface ContactForm {
   user_email: string;
   message: string;
 }
+
+export interface ExperienceItem {
+  company: string;
+  industry: string;
+  period: string;
+  position: string;
+  tasks: string[];
+}
+
+export interface EducationItem {
+  institution: string;
+  period: string;
+  program: string;
+  description: string;
+}

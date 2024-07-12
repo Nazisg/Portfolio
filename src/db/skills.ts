@@ -67,6 +67,21 @@ const skills: Skill[] = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
   },
   {
+    name: "Mongoose",
+    iconUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongoose/mongoose-original.svg",
+  },
+  {
+    name: "PostgreSQL",
+    iconUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+  },
+  {
+    name: "Sequelize",
+    iconUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg",
+  },
+  {
     name: "Webpack",
     iconUrl:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg",
@@ -87,9 +102,24 @@ const skills: Skill[] = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
   },
   {
+    name: "GitLab",
+    iconUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg",
+  },
+  {
     name: "Postman",
     iconUrl:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+  },
+  {
+    name: "Swagger",
+    iconUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg",
+  },
+  {
+    name: "Figma",
+    iconUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
   },
 ];
 
