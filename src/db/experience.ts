@@ -2,9 +2,21 @@ import { ExperienceItem } from "@/shared/types";
 
 const experienceData: ExperienceItem[] = [
   {
+    company: "Kvadrat",
+    industry: "Your IT Solutions",
+    period: "August 2024 - present",
+    position: "Front-end Developer Intern",
+    tasks: [
+      "Collaborated effectively with the frontend team on real-world projects using Git for version control.",
+      "Ensured proper task distribution and tracking in alignment with Agile methodologies.",
+      "Developed responsive designs to deliver seamless user experiences across devices.",
+      "Provided support for previous projects, optimizing codebase and adding new features.",
+    ],
+  },
+  {
     company: "Information Communication Technologies Agency",
     industry: "ICTA",
-    period: "July 2024 - present",
+    period: "July 2024 - August 2024",
     position: "Front-end Developer Intern",
     tasks: [
       "Completing tasks according, utilizing HTML, CSS, JavaScript, and React.",

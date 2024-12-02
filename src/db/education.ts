@@ -3,7 +3,7 @@ import { EducationItem } from "@/shared/types";
 const educationData: EducationItem[] = [
   {
     institution: "Codelandia IT School and Software Center",
-    period: "January 2024 - present",
+    period: "January 2024 - August 2024",
     program: "MERNstack Developer",
     description:
       "This comprehensive program focuses on teaching full-stack development using MongoDB, Express.js, React, and Node.js. The course is enhancing my knowledge and proficiency in modern web technologies, preparing me for a successful career in web development.",

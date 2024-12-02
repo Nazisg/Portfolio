@@ -3,10 +3,28 @@ import crm from "@/shared/media/imgs/crm.png";
 import dietitian from "@/shared/media/imgs/dietitian.png";
 import furniro from "@/shared/media/imgs/furniro.png";
 import movie from "@/shared/media/imgs/movie.png";
+import mern from "@/shared/media/imgs/mern.png";
 import plast from "@/shared/media/imgs/plast.png";
 import { Project } from "@/shared/types";
 
 const projects: Project[] = [
+  {
+    title: "Techno",
+    subtitle: "e-Commerce",
+    description:
+      "An e-commerce platform for tech, allowing users to browse products, view details, and make purchases.",
+    image: mern,
+    technologies: [
+      "React",
+      "JavaScript",
+      "Tailwind CSS",
+      "MongoDB",
+      "Node.js",
+      "Express.js",
+    ],
+    githubLink: "https://github.com/Nazisg/techno-ecommerce-mern",
+    liveLink: "",
+  },
   {
     title: "StreamVibe",
     subtitle: "Movie page",
